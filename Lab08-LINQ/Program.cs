@@ -22,6 +22,10 @@ namespace Lab08_LINQ
             }
         }
 
+
+        /// <summary>
+        /// Converts the json
+        /// </summary>
         static void ConvertJson()
         {
             string path = "../../../data.json";
@@ -84,7 +88,7 @@ namespace Lab08_LINQ
 
 
             ///<summary>
-            /// All Manhattan Neighborhoods
+            /// All Manhattan Neighborhoods query's consolidated
             /// </summary>
             var oneQueryThroughNeighborhoods = convertedJson.Features.Select(x => x)
                                                 .Select(x => x.Properties)
@@ -108,5 +112,6 @@ namespace Lab08_LINQ
                 Console.WriteLine(hood);
             }
         }
+
     }
 }
