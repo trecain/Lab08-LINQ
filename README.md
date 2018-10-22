@@ -3,7 +3,8 @@
 ## Problem Domain:
 
 ```
-In this lab we are provided a json file containing neighborhoods in Manhattan.  Directions are to use it to create Objects that we can query over using LINQ and Lambda's.
+In this lab we are provided a json file containing neighborhoods in Manhattan.  
+Directions are to use it to create Objects that we can query over using LINQ and Lambda's.
 ```
 
 ## Visual: 
