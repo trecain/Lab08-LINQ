@@ -93,7 +93,7 @@ namespace Lab08_LINQ
             var oneQueryThroughNeighborhoods = convertedJson.Features.Select(x => x)
                                                 .Select(x => x.Properties)
                                                 .Select(x => x.Neighborhood)
-                                                .Select(x => x.Length > 0)
+                                                .Where(x => x.Length > 0)
                                                 .Distinct();
             Console.WriteLine("-------------------------------One query Of All Manhattan Neighborhoods------------------------------------------");
             foreach (var hoods in oneQueryThroughNeighborhoods)
